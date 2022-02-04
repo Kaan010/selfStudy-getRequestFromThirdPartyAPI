@@ -14,5 +14,6 @@ Possible usage area is to use these predictions to show more related datas to us
 Predict API is not returning DTO to user. Directly returning entity. It must be fixed.
 Our AccessLogService just loading first 100 page's datas. It must be fixed.
 Error handling has week. It can be updated.
+Unit and Integration tests are not implemented
 
 Thank you for your time. 
