@@ -1,8 +1,11 @@
 # kaankalan - dev.akademi2022
 
 Main branch is developHere
+<br>
 #Short Presentation:  https://youtu.be/74CX56nlLbA
 
+
+How to test project-> just fix your db according to appproperties fiel
 
 This project is written to find categorytype that user interested and budget of the user.
 Possible usage area is to use these predictions to show more related datas to user.
