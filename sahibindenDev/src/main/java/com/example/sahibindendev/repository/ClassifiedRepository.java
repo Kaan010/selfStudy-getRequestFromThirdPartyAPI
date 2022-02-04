@@ -9,7 +9,6 @@ import java.util.Optional;
 
 public interface ClassifiedRepository extends JpaRepository<Classified,String> {
 
-
     Optional<List<Classified>> findAllByUsersId(String userId);
 
 }

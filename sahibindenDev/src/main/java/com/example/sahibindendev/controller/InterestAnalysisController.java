@@ -19,6 +19,8 @@ public class InterestAnalysisController {
     }
 
 
+    //CALLME LAST
+    //****OUR END POINT****
     @GetMapping("/{userid}")
     public ResponseEntity<InterestAnalysis> getInterestAnalysisOfUser(@PathVariable String userid) {
         return new ResponseEntity<>(

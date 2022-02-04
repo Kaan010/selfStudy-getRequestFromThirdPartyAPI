@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="re create projects base again">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/ClassifiedController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/InterestAnalysisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/exception/ClassifiedNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/exception/InterestAnalysisNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/model/Classified.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/model/InterestAnalysis.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/ClassifiedRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/InterestAnalysisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/ClassifiedService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/InterestAnalysisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/util/PredictCalculateUtil.java" afterDir="false" />
+    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="Classified and InterestAnalysis structures are created">
+      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/AccessLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/exception/AccessLogNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/AccessLogRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/ClassifiedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/ClassifiedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/InterestAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/InterestAnalysisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/ClassifiedRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/ClassifiedRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/InterestAnalysisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/InterestAnalysisRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/ClassifiedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/ClassifiedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/InterestAnalysisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/InterestAnalysisService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -42,6 +39,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -55,7 +60,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -81,6 +86,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.sahibindendev.controller" />
       <recent name="com.example.sahibindendev.exception" />
     </key>
   </component>
@@ -161,7 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643976061675</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Classified and InterestAnalysis structures are created">
+      <created>1643985900214</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643985900214</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Classified and InterestAnalysis structures are created">
+      <created>1643985911019</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643985911019</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +204,7 @@
     <MESSAGE value="re start" />
     <MESSAGE value="project base created" />
     <MESSAGE value="re create projects base again" />
-    <option name="LAST_COMMIT_MESSAGE" value="re create projects base again" />
+    <MESSAGE value="Classified and InterestAnalysis structures are created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classified and InterestAnalysis structures are created" />
   </component>
 </project>

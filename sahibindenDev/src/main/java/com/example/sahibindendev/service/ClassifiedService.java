@@ -29,16 +29,14 @@ public class ClassifiedService {
         //TODO: Get all Classifieds from sahibinden
     }
 
-
-
+    protected Classified getClassifiedById(String id){
+        return classifiedRepository.findById(id)
+                .orElseThrow(() -> new ClassifiedNotFoundException("Classified could not found with id " + id));
+    }
+    
     //TO TEST
     public List<Classified> getAllClassifiedsFromOurDb(){
         return classifiedRepository.findAll();
     }
 
-    //Will be called  from InterestAnalysis service
-    protected List<Classified> getAllClassifiedsByUserId(String userId){
-        return classifiedRepository.findAllByUsersId(userId)
-                .orElseThrow(() -> new ClassifiedNotFoundException("Classified could not found with id " + userId));
-    }
 }

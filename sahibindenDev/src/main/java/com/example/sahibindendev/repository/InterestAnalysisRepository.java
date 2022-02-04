@@ -7,5 +7,6 @@ import java.util.Optional;
 
 public interface InterestAnalysisRepository extends JpaRepository<InterestAnalysis,String> {
 
+    //not used for now
     Optional<InterestAnalysis> findInterestAnalysisByUserId(String userId);
 }
