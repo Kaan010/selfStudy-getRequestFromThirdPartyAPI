@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="it works now">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20210307.xml" beforeDir="false" />
+    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="project complated with small FIXMEs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643999667852</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="project complated with small FIXMEs">
+      <created>1644000360313</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644000360313</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +227,8 @@
     <MESSAGE value="Classified and InterestAnalysis structures are created" />
     <MESSAGE value="all structure created getting data from sahibinden will be implemented" />
     <MESSAGE value="it works now" />
-    <option name="LAST_COMMIT_MESSAGE" value="it works now" />
+    <MESSAGE value="project complated with small FIXMEs" />
+    <option name="LAST_COMMIT_MESSAGE" value="project complated with small FIXMEs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
