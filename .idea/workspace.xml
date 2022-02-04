@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="project complated with small FIXMEs">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180130.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="read me updated">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644000360313</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="read me updated">
+      <created>1644001299581</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1644001299581</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +234,8 @@
     <MESSAGE value="all structure created getting data from sahibinden will be implemented" />
     <MESSAGE value="it works now" />
     <MESSAGE value="project complated with small FIXMEs" />
-    <option name="LAST_COMMIT_MESSAGE" value="project complated with small FIXMEs" />
+    <MESSAGE value="read me updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="read me updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
