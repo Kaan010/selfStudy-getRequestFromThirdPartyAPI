@@ -1,7 +1,6 @@
 package com.example.sahibindendev.util;
 
 import com.example.sahibindendev.model.CategoryType;
-import com.example.sahibindendev.model.InterestAnalysis;
 
 import java.util.HashMap;
 import java.util.List;
@@ -12,6 +11,7 @@ public class PredictCalculateUtil {
         categoryCounterMap.put(CategoryType.REAL_ESTATE, 0);
         categoryCounterMap.put(CategoryType.SHOPPING, 0);
         categoryCounterMap.put(CategoryType.VEHICLE, 0);
+        categoryCounterMap.put(CategoryType.GENERAL, 0);
 
         for (CategoryType categoryType : categoryTypes) {
             categoryCounterMap.put(
@@ -20,7 +20,7 @@ public class PredictCalculateUtil {
             );
         }
 
-        CategoryType resultCategory = CategoryType.REAL_ESTATE;
+        CategoryType resultCategory = CategoryType.GENERAL;
         int resultCategoryCounter = 0;
         for (CategoryType category : CategoryType.values()) {
             if (categoryCounterMap.get(category) > resultCategoryCounter) {
@@ -31,7 +31,7 @@ public class PredictCalculateUtil {
         return resultCategory;
     }
 
-    public static String calculatePossibleBudget(List<Integer> pricesOfClassifieds) {
+    public static String calculatePossibleBudget(List<Double> pricesOfClassifieds) {
         return pricesOfClassifieds.stream()
                 .mapToDouble(d -> d)
                 .average()
@@ -39,4 +39,4 @@ public class PredictCalculateUtil {
     }
 
 
-    }
+}

@@ -16,12 +16,12 @@ data class InterestAnalysis @JvmOverloads constructor(
         val id: String? = "",
 
         @Column(unique = true)
-        val userId:String,
+        val userId:Long,
 
         val possibleInterestedCategory:CategoryType,
         val possibleBudget:String
 
 )
 enum class CategoryType {
-    SHOPPING, REAL_ESTATE, VEHICLE
+    SHOPPING, REAL_ESTATE, VEHICLE, GENERAL
 }

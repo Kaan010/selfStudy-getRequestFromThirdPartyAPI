@@ -1,42 +1,36 @@
 package com.example.sahibindendev.service;
 
-import com.example.sahibindendev.exception.ClassifiedNotFoundException;
-import com.example.sahibindendev.model.Classified;
-import com.example.sahibindendev.repository.ClassifiedRepository;
+import com.example.sahibindendev.model.ClassifiedDTO;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
-import java.util.List;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 @Service
 public class ClassifiedService {
 
-    private final ClassifiedRepository classifiedRepository;
 
-    public ClassifiedService(ClassifiedRepository classifiedRepository) {
-        this.classifiedRepository = classifiedRepository;
+    private static ClassifiedDTO parse(String responseBody) {
+        responseBody = responseBody.substring(8);
+        JSONObject album = new JSONObject(responseBody);
+        String category = "";
+        double price = 0;
+        category = album.getString("category");
+        price = album.getDouble("price");
+        return new ClassifiedDTO(price, category);
     }
 
-
-
-    public List<Classified> saveAllClassifiedsThatComeFromSahibindenApi(){
-        return classifiedRepository.saveAllAndFlush(getAllClassifiedsFromApi());
-        //TODO: Save all Classifieds from sahibinden
-    }
-
-    private List<Classified> getAllClassifiedsFromApi() {
-        return Collections.emptyList();
-        //TODO: Get all Classifieds from sahibinden
-    }
-
-    protected Classified getClassifiedById(String id){
-        return classifiedRepository.findById(id)
-                .orElseThrow(() -> new ClassifiedNotFoundException("Classified could not found with id " + id));
-    }
-    
-    //TO TEST
-    public List<Classified> getAllClassifiedsFromOurDb(){
-        return classifiedRepository.findAll();
+    protected ClassifiedDTO getClassifiedById(String id) {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://api-devakademi.sahibinden.com/v1/api/classifieds/" + id)).build();
+        return client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+                .thenApply(HttpResponse::body)
+                .thenApply(ClassifiedService::parse)
+                .join();
     }
 
 }

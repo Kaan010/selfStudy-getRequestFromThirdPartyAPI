@@ -1,8 +1,8 @@
 package com.example.sahibindendev.service;
 
-import com.example.sahibindendev.model.AccessLog;
+import com.example.sahibindendev.model.AccessLogDTO;
 import com.example.sahibindendev.model.CategoryType;
-import com.example.sahibindendev.model.Classified;
+import com.example.sahibindendev.model.ClassifiedDTO;
 import com.example.sahibindendev.model.InterestAnalysis;
 import com.example.sahibindendev.repository.InterestAnalysisRepository;
 import com.example.sahibindendev.util.PredictCalculateUtil;
@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 public class InterestAnalysisService {
@@ -24,7 +25,7 @@ public class InterestAnalysisService {
         this.classifiedService = classifiedService;
     }
 
-    public InterestAnalysis getInterestAnalysisOfUserId(String userId) {
+    public InterestAnalysis getInterestAnalysisOfUserId(Long userId) {
         InterestAnalysis interestAnalysisByUserId = createInterestAnalysisByUserId(userId);
         saveInterestAnalysisByUserId(interestAnalysisByUserId);
         return interestAnalysisByUserId;
@@ -34,10 +35,10 @@ public class InterestAnalysisService {
         interestAnalysisRepository.saveAndFlush(interestAnalysis);
     }
 
-    private InterestAnalysis createInterestAnalysisByUserId(String userid) {
-        List<AccessLog> accessLogsByUserId = accessLogService.getAccessLogsByUserId(userid);
-        List<CategoryType> allAccessedCategoriesOfUser = getAllAccessedCategoriesOfUser(accessLogsByUserId);
-        List<Integer> allCheckedPricesOfUser = getAllCheckedPricesOfUser(accessLogsByUserId);
+    private InterestAnalysis createInterestAnalysisByUserId(Long userid) {
+        List<AccessLogDTO> accessLogsByUserIdDTO = accessLogService.getAccessLogsByUserId(userid);
+        List<CategoryType> allAccessedCategoriesOfUser = getAllAccessedCategoriesOfUser(accessLogsByUserIdDTO);
+        List<Double> allCheckedPricesOfUser = getAllCheckedPricesOfUser(accessLogsByUserIdDTO);
         return new InterestAnalysis(
                 userid,
                 PredictCalculateUtil.calculatePossibleInterest(allAccessedCategoriesOfUser),
@@ -45,21 +46,20 @@ public class InterestAnalysisService {
         );
     }
 
-    private List<CategoryType> getAllAccessedCategoriesOfUser(List<AccessLog> accessLogsByUserId) {
-        return accessLogsByUserId.stream()
+    private List<CategoryType> getAllAccessedCategoriesOfUser(List<AccessLogDTO> accessLogsByUserIdDTO) {
+        return accessLogsByUserIdDTO.parallelStream()
                 .filter(log -> log.getEndPoint().contains("/classifieds/"))
                 .map(log -> classifiedService.getClassifiedById(getClassifiedIdFromEndPoint(log.getEndPoint())))
-                .map(Classified::getCategory)
+                .map(ClassifiedDTO::getCategory)
                 .map(CategoryType::valueOf)
                 .collect(Collectors.toList());
     }
-
-    private List<Integer> getAllCheckedPricesOfUser(List<AccessLog> accessLogsByUserId) {
-        return accessLogsByUserId.stream()
+//FIXME: Up and Down side methods go 2 times DB. It's wrong I know but I have no time to think for it
+    private List<Double> getAllCheckedPricesOfUser(List<AccessLogDTO> accessLogsByUserIdDTO) {
+        return accessLogsByUserIdDTO.parallelStream()
                 .filter(log -> log.getEndPoint().contains("/classifieds/"))
                 .map(log -> classifiedService.getClassifiedById(getClassifiedIdFromEndPoint(log.getEndPoint())))
-                .map(Classified::getCurrency)
-                .map(Integer::valueOf)
+                .map(ClassifiedDTO::getPrice)
                 .collect(Collectors.toList());
     }
 

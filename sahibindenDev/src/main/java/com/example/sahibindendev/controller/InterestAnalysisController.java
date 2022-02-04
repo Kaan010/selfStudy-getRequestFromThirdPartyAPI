@@ -4,10 +4,7 @@ import com.example.sahibindendev.model.InterestAnalysis;
 import com.example.sahibindendev.service.InterestAnalysisService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/v1/interest")
@@ -21,8 +18,8 @@ public class InterestAnalysisController {
 
     //CALLME LAST
     //****OUR END POINT****
-    @GetMapping("/{userid}")
-    public ResponseEntity<InterestAnalysis> getInterestAnalysisOfUser(@PathVariable String userid) {
+    @PostMapping("/{userid}")
+    public ResponseEntity<InterestAnalysis> getInterestAnalysisOfUser(@PathVariable Long userid) {
         return new ResponseEntity<>(
                 interestAnalysisService.getInterestAnalysisOfUserId(userid),
                 HttpStatus.OK

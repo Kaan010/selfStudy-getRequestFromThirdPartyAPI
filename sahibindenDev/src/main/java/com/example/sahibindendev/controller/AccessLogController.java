@@ -1,9 +1,7 @@
 package com.example.sahibindendev.controller;
 
-import com.example.sahibindendev.model.AccessLog;
-import com.example.sahibindendev.model.Classified;
+import com.example.sahibindendev.model.AccessLogDTO;
 import com.example.sahibindendev.service.AccessLogService;
-import com.example.sahibindendev.service.ClassifiedService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,7 +24,7 @@ public class AccessLogController {
     //CALLME FIRST
     //update to our DB with sahibindens DB for accessLog
     @PostMapping("/update/")
-    public ResponseEntity<List<AccessLog>> saveAllClassifiedsComesFromSahibinden() {
+    public ResponseEntity<List<AccessLogDTO>> saveAllClassifiedsComesFromSahibinden() {
         return new ResponseEntity<>(
                 accessLogService.saveAllAccessLogsComesFromSahibindenApi(),
                 HttpStatus.CREATED
@@ -36,7 +34,7 @@ public class AccessLogController {
 
     //TO TEST
     @GetMapping
-    public ResponseEntity<List<AccessLog>> getAllClassifieds() {
+    public ResponseEntity<List<AccessLogDTO>> getAllClassifieds() {
         return new ResponseEntity<>(
                 accessLogService.getAllAccessLogsFromOurDb(),
                 HttpStatus.OK
