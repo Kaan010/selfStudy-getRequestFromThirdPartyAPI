@@ -1,0 +1,77 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"19ef60da-fe29-42d2-9684-11749fdc5a78\" name=\"Changes\" comment=\"all structure created getting data from sahibinden will be implemented\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n        <option value=\"Kotlin Class\" />\n        <option value=\"Interface\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"development\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"RESET_MODE\" value=\"HARD\" />\n  </component>\n  <component name=\"GitSEFilterConfiguration\">\n    <file-type-list>\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\n      <filtered-out-file-type name=\"TAG\" />\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\n    </file-type-list>\n  </component>\n  <component name=\"JpbToolWindowState\">\n    <option name=\"myId2FirstActivated\">\n      <map>\n        <entry key=\"com.haulmont.jpb.jpaInspector\" value=\"true\" />\n        <entry key=\"com.haulmont.jpb.jpaPalette\" value=\"true\" />\n        <entry key=\"com.haulmont.jpb.jpaStructure\" value=\"true\" />\n      </map>\n    </option>\n    <option name=\"myId2Visible\">\n      <map>\n        <entry key=\"com.haulmont.jpb.jpaInspector\" value=\"false\" />\n        <entry key=\"com.haulmont.jpb.jpaPalette\" value=\"false\" />\n        <entry key=\"com.haulmont.jpb.jpaStructure\" value=\"false\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"24cKdIHEWK2QSngRYGBYz6IWw7V\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RequestMappingsPanelOrder0\" value=\"0\" />\n    <property name=\"RequestMappingsPanelOrder1\" value=\"1\" />\n    <property name=\"RequestMappingsPanelWidth0\" value=\"75\" />\n    <property name=\"RequestMappingsPanelWidth1\" value=\"75\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"jdk.selected.JAVA_MODULE\" value=\"corretto-11\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"vcs.Git\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"com.example.sahibindendev.controller\" />\n      <recent name=\"com.example.sahibindendev.exception\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Spring Boot.SahibindenDevApplication\">\n    <configuration name=\"SahibindenDevApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\n      <module name=\"sahibindenDev\" />\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.example.sahibindendev.SahibindenDevApplication\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"SahibindenProjectApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\n      <module name=\"sahibindenProject\" />\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.example.sahibindenproject.SahibindenProjectApplication\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"19ef60da-fe29-42d2-9684-11749fdc5a78\" name=\"Changes\" comment=\"\" />\n      <created>1643924522513</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1643924522513</updated>\n      <workItem from=\"1643924524429\" duration=\"3566000\" />\n      <workItem from=\"1643962927020\" duration=\"114000\" />\n      <workItem from=\"1643963253326\" duration=\"2892000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"initial commmit\">\n      <created>1643924573080</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643924573080</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"initial commmit\">\n      <created>1643960930651</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643960930651</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"initial commmit2\">\n      <created>1643961946172</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643961946172</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"initial commmit2\">\n      <created>1643962964929</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643962964929</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"re start\">\n      <created>1643975722576</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643975722576</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"project base created\">\n      <created>1643975775783</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643975775783</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"re create projects base again\">\n      <created>1643976061675</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643976061675</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"Classified and InterestAnalysis structures are created\">\n      <created>1643985900214</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643985900214</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"Classified and InterestAnalysis structures are created\">\n      <created>1643985911019</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643985911019</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"all structure created getting data from sahibinden will be implemented\">\n      <created>1643988921551</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643988921551</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"11\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"initial commmit\" />\n    <MESSAGE value=\"initial commmit2\" />\n    <MESSAGE value=\"re start\" />\n    <MESSAGE value=\"project base created\" />\n    <MESSAGE value=\"re create projects base again\" />\n    <MESSAGE value=\"Classified and InterestAnalysis structures are created\" />\n    <MESSAGE value=\"all structure created getting data from sahibinden will be implemented\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"all structure created getting data from sahibinden will be implemented\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision af3d48643255d9e52ac47d6ff1911d9f928791a2)
++++ b/.idea/workspace.xml	(date 1643999992224)
+@@ -4,7 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="all structure created getting data from sahibinden will be implemented">
++    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="project complated with small FIXMEs">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -24,7 +24,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="development" />
++        <entry key="$PROJECT_DIR$" value="developHere" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -63,6 +63,7 @@
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
++    <property name="DatabaseDriversLRU" value="postgresql" />
+     <property name="RequestMappingsPanelOrder0" value="0" />
+     <property name="RequestMappingsPanelOrder1" value="1" />
+     <property name="RequestMappingsPanelWidth0" value="75" />
+@@ -178,7 +179,28 @@
+       <option name="project" value="LOCAL" />
+       <updated>1643988921551</updated>
+     </task>
+-    <option name="localTasksCounter" value="11" />
++    <task id="LOCAL-00011" summary="all structure created getting data from sahibinden will be implemented">
++      <created>1643988971225</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1643988971225</updated>
++    </task>
++    <task id="LOCAL-00012" summary="it works now">
++      <created>1643999667852</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1643999667852</updated>
++    </task>
++    <task id="LOCAL-00013" summary="project complated with small FIXMEs">
++      <created>1643999965681</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1643999965681</updated>
++    </task>
++    <option name="localTasksCounter" value="14" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -203,6 +225,8 @@
+     <MESSAGE value="re create projects base again" />
+     <MESSAGE value="Classified and InterestAnalysis structures are created" />
+     <MESSAGE value="all structure created getting data from sahibinden will be implemented" />
+-    <option name="LAST_COMMIT_MESSAGE" value="all structure created getting data from sahibinden will be implemented" />
++    <MESSAGE value="it works now" />
++    <MESSAGE value="project complated with small FIXMEs" />
++    <option name="LAST_COMMIT_MESSAGE" value="project complated with small FIXMEs" />
+   </component>
+ </project>
+\ No newline at end of file
