@@ -13,6 +13,6 @@ public class SahibindenProjectApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("Lets Move");
+        System.out.println("Lets Moveasd");
     }
 }
