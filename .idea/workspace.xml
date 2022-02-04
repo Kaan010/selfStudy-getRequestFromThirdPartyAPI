@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="all structure created getting data from sahibinden will be implemented">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20210307.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="19ef60da-fe29-42d2-9684-11749fdc5a78" name="Changes" comment="it works now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/AccessLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/AccessLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/ClassifiedController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/InterestAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/controller/InterestAnalysisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/model/AccessLog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/model/AccessLogDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/model/Classified.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/model/ClassifiedDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/model/InterestAnalysis.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/model/InterestAnalysis.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/AccessLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/AccessLogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/repository/ClassifiedRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/ClassifiedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/ClassifiedService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/InterestAnalysisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/InterestAnalysisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/util/PredictCalculateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/util/PredictCalculateUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643988971225</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="it works now">
+      <created>1643999667852</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643999667852</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +219,8 @@
     <MESSAGE value="re create projects base again" />
     <MESSAGE value="Classified and InterestAnalysis structures are created" />
     <MESSAGE value="all structure created getting data from sahibinden will be implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="all structure created getting data from sahibinden will be implemented" />
+    <MESSAGE value="it works now" />
+    <option name="LAST_COMMIT_MESSAGE" value="it works now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -244,7 +237,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>33</line>
+          <line>36</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -254,7 +247,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>29</line>
+          <line>32</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -264,57 +257,57 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>42</line>
+          <line>45</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>51</line>
+          <line>54</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>53</line>
+          <line>56</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>55</line>
+          <line>58</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>54</line>
+          <line>57</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>56</line>
+          <line>59</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>57</line>
+          <line>60</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>58</line>
+          <line>61</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>59</line>
+          <line>62</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>60</line>
+          <line>63</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sahibindenDev/src/main/java/com/example/sahibindendev/service/AccessLogService.java</url>
-          <line>61</line>
+          <line>64</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint type="java-line">

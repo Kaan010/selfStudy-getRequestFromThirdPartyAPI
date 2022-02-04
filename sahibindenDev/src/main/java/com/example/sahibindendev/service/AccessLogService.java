@@ -27,7 +27,10 @@ public class AccessLogService {
     }
 
     public List<AccessLogDTO> saveAllAccessLogsComesFromSahibindenApi(){
-        return accessLogRepository.saveAllAndFlush(getAllAccessLogsFromApi());
+        for(int i=0;i<100;i++){ //FIXME: Its an Assumption
+            accessLogRepository.saveAllAndFlush(getAllAccessLogsFromApi(i+""));
+        }
+        return Collections.emptyList(); //must be fixed later
     }
 
     protected List<AccessLogDTO> getAccessLogsByUserId(Long userId){
@@ -39,9 +42,9 @@ public class AccessLogService {
 //FIXME: we are loading just 14th pages datas. We must load all datas in all pages.
 // But I couldn figure out how to load all given data from sahibindens api to my Db.
 // Also I didn't want to use mock this method. Because of it just 14th page comes
-    private List<AccessLogDTO> getAllAccessLogsFromApi() {
+    private List<AccessLogDTO> getAllAccessLogsFromApi(String pageNumber) {
         HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request=HttpRequest.newBuilder().uri(URI.create("https://api-devakademi.sahibinden.com/v1/api/access-logs?pageNo=15")).build();
+        HttpRequest request=HttpRequest.newBuilder().uri(URI.create("https://api-devakademi.sahibinden.com/v1/api/access-logs?pageNo="+pageNumber)).build();
         return client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                 .thenApply(HttpResponse::body)
                 .thenApply(AccessLogService::parse)
